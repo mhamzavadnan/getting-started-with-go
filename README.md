@@ -1,21 +1,38 @@
 # Getting Started with Go
 
-A comprehensive Go application for learning and practicing Go programming fundamentals.
+A tutorial-based Go application following the official [Go Getting Started Guide](https://go.dev/doc/tutorial/getting-started).
+
+## Table of Contents
+
+- [Description](#description)
+- [Prerequisites](#prerequisites)
+- [What You'll Learn](#what-youll-learn)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Understanding the Code](#understanding-the-code)
+- [Working with External Packages](#working-with-external-packages)
+- [Usage](#usage)
+- [Development](#development)
+- [Learning Resources](#learning-resources)
 
 ## Description
 
-This project is designed as a learning resource for Go developers, demonstrating best practices in:
-- Project structure and organization
-- External package management with Go modules
-- Build automation with Makefiles
-- Testing and development workflows
+This project demonstrates fundamental Go programming concepts and best practices, including:
+- Setting up a Go module with `go.mod`
+- Writing and organizing Go code
+- Working with external packages (using `rsc.io/quote` as an example)
+- Managing dependencies with Go modules
+- Project structure and build automation
 
-The application uses the `rsc.io/quote` package to display inspirational quotes, serving as a practical example of dependency management in Go.
+The application imports the `rsc.io/quote` package to display an inspirational message about Go's communication philosophy.
 
 ## Prerequisites
 
-- Go 1.25.5 or higher
-- Git (for version control)
+- **Go 1.25.5 or higher** - [Download and install Go](https://go.dev/doc/install)
+- **A code editor** - VSCode (free), GoLand (paid), or Vim (free) recommended
+- **A command terminal** - PowerShell/cmd on Windows, any terminal on Linux/Mac
+- **Git** - For version control (optional but recommended)
+- **Some programming experience** - Basic understanding of functions and programming concepts
 
 ## Project Structure
 
