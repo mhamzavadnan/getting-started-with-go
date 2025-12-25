@@ -1,4 +1,4 @@
-# go-practice
+# getting-started-with-go
 
 A simple Go application for learning and practicing Go programming fundamentals.
 
