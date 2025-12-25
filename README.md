@@ -1,10 +1,16 @@
-# getting-started-with-go
+# Getting Started with Go
 
-A simple Go application for learning and practicing Go programming fundamentals.
+A comprehensive Go application for learning and practicing Go programming fundamentals.
 
 ## Description
 
-This project is a basic Go application that demonstrates the use of external packages and Go module management. It uses the `rsc.io/quote` package to display a greeting message.
+This project is designed as a learning resource for Go developers, demonstrating best practices in:
+- Project structure and organization
+- External package management with Go modules
+- Build automation with Makefiles
+- Testing and development workflows
+
+The application uses the `rsc.io/quote` package to display inspirational quotes, serving as a practical example of dependency management in Go.
 
 ## Prerequisites
 
@@ -14,7 +20,7 @@ This project is a basic Go application that demonstrates the use of external pac
 ## Project Structure
 
 ```
-go-practice/
+getting-started-with-go/
 ├── cmd/
 │   └── go-practice/
 │       └── main.go          # Main application entry point
@@ -31,8 +37,8 @@ go-practice/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mhamzavadnan/go-practice.git
-   cd go-practice
+   git clone https://github.com/mhamzavadnan/getting-started-with-go.git
+   cd getting-started-with-go
    ```
 
 2. Download dependencies:
@@ -68,6 +74,24 @@ Then run the compiled binary:
 ./bin/go-practice
 ```
 
+### Using Makefile
+
+If you have Make installed, you can use the Makefile for common tasks:
+
+```bash
+# Build the application
+make build
+
+# Run the application
+make run
+
+# Run tests
+make test
+
+# Clean build artifacts
+make clean
+```
+
 ## Dependencies
 
 - [rsc.io/quote](https://pkg.go.dev/rsc.io/quote) - A package for inspirational quotes
@@ -82,11 +106,56 @@ To add a new dependency:
 go get <package-name>
 ```
 
+To tidy up dependencies and remove unused ones:
+
+```bash
+go mod tidy
+```
+
 ### Running Tests
 
 ```bash
+# Run all tests
 go test ./...
+
+# Run tests with verbose output
+go test -v ./...
+
+# Run tests with coverage
+go test -cover ./...
 ```
+
+### Code Formatting
+
+Format your code using:
+
+```bash
+go fmt ./...
+```
+
+### Code Linting
+
+Run static analysis:
+
+```bash
+go vet ./...
+```
+
+## Learning Resources
+
+- [Official Go Documentation](https://go.dev/doc/)
+- [Go by Example](https://gobyexample.com/)
+- [Effective Go](https://go.dev/doc/effective_go)
+- [Go Modules Reference](https://go.dev/ref/mod)
+
+## Contributing
+
+This is a learning project. Feel free to:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
@@ -95,3 +164,7 @@ This is a practice project for learning Go.
 ## Author
 
 [mhamzavadnan](https://github.com/mhamzavadnan)
+
+---
+
+**Happy Coding! 🚀**
